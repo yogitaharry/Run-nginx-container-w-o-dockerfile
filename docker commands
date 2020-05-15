@@ -1,0 +1,17 @@
+docker search nginx
+docker pull nginx:latest
+docker images
+    docker run -P  -d nginx
+    docker ps
+OR
+    docker run -p 8080:80 -d nginx
+    docker ps
+    
+    
+NOTE:    
+what if run ::  docker run -d nginx 
+Ans : container will spin up but you not able browse , all over mean the puspose of spinning up vanished coz 
+     no port mapping of container port 80(default port of nginx to serve webpage) to hosts any port.
+     
+     you can verify by :
+                        docker ps
